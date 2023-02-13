@@ -1,0 +1,8 @@
+.userExpense {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+}
