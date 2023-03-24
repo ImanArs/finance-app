@@ -7,9 +7,11 @@ import Header from './components/header/Header';
 function App () {
 
   return (
-    <div className="App">
-      <Header />
-      <Main />
+    <div className="App" id='app'>
+      <div className='container'>
+        <Header />
+        <Main />
+      </div>
     </div>
   );
 }

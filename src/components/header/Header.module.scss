@@ -1,0 +1,24 @@
+header {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        font-size: 20px;
+    }
+    input {
+        visibility: hidden;
+    }
+    label {
+        padding: 15px;
+        border: 1px solid #000;
+    }
+}
+.minus {
+    font-size: 24px;
+    color: rgb(170, 33, 33);
+}
+.plus {
+    font-size: 24px;
+    color: rgb(32, 113, 32);
+}

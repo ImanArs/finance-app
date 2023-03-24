@@ -1,12 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 
-// const initialState = {
-//     financesIncome: [],
-//     incomeTotalAmount: 0,
-//     financesSpending: [],
-//     spendingTotalAmount: 0
-// }
-const initialState = {
+const initialState = {  
     expenses: [],
     totalAmount: 0
 };
@@ -16,7 +10,7 @@ export const addExpense = createAsyncThunk(
   async (expense, { getState, dispatch }) => {
     const currentExpenses = getState().expense.expenses;
     const newExpenses = [...currentExpenses, expense];
-      console.log(newExpenses);
+      console.log(newExpenses, "exp");
     return newExpenses;
   }
 );
@@ -34,20 +28,4 @@ export const addExpense = createAsyncThunk(
     }
   });
 
-// export const financeSlice = createSlice({
-//     name: 'finances',
-//     initialState,
-//     reducers: {
-//         setFinancesIncome: (state, action) => {;
-//             state.financesIncome = action.payload
-//         },
-//         setFinancesSpending: (state, action) => {
-//             state.financesSpending = action.payload
-//         }
-//     }
-// })
-
-// export const { setFinancesIncome } = financeSlice.actions;
-// export const { setFinancesSpending } = financeSlice.actions;
-// export default financeSlice.reducer
 export default expenseSlice.reducer;

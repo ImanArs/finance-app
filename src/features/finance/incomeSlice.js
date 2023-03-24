@@ -10,7 +10,7 @@ export const addIncome = createAsyncThunk(
   async (income, { getState, dispatch }) => {
     const currentIncomes = getState().income.incomes;
     const newIncomes = [...currentIncomes, income];
-      console.log(newIncomes);
+      console.log(newIncomes, "inc");
       return newIncomes;
   }
 )
